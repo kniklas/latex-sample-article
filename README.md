@@ -3,7 +3,7 @@
 It is a sample LaTeX boilerplate code to write and build PDF file of an article.
 
 Dependencies:
-* `pdflatex`
+* `pdflatex` with `biblatex` package
 * `biber` package, for usage see [documentation](https://en.wikibooks.org/wiki/LaTeX/Bibliographies_with_biblatex_and_biber)
 * `pandoc` tool to convert LaTeX to .DOCX see: [jgm/pandoc](https://github.com/jgm/pandoc)
 
