@@ -15,5 +15,8 @@ build/
 *.bcf
 *.blg
 
+# docx output files
+*.docx
+
 # MacBook specific
 .DS_Store
