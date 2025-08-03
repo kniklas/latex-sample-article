@@ -1,6 +1,6 @@
 # An example LaTeX article with a Makefile
 
-It is a sample LaTeX boilerplate code to write and build PDF file of an article.
+It is a sample LaTeX boilerplate code to build a PDF file out of [article document class](https://ctan.org/pkg/article).
 
 Dependencies:
 * `pdflatex` with `biblatex` package
