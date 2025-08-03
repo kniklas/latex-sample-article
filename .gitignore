@@ -1,0 +1,19 @@
+# VIM file
+*.swp
+
+# LaTeX build folder and files
+build/
+*.aux
+*.gz
+*.log
+*.pdf
+*.toc
+*.xml
+
+# Biber build specific files
+*.bbl
+*.bcf
+*.blg
+
+# MacBook specific
+.DS_Store
