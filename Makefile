@@ -7,7 +7,7 @@ all:
 	echo "Building LaTeX document and PDF file..."
 	mkdir -p $(BUILD_FOLDER)
 	pdflatex -output-directory=$(BUILD_FOLDER) -halt-on-erro $(ARTICLE).tex
-	biber $(BUILD_FOLDER)/test
+	biber $(BUILD_FOLDER)/$(ARTICLE)
 	pdflatex -output-directory=$(BUILD_FOLDER) -halt-on-erro $(ARTICLE).tex
 	pdflatex -output-directory=$(BUILD_FOLDER) -halt-on-erro $(ARTICLE).tex
 clean:
