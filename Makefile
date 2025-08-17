@@ -11,8 +11,11 @@ all:
 	pdflatex -output-directory=$(BUILD_FOLDER) -halt-on-erro $(ARTICLE).tex
 	pdflatex -output-directory=$(BUILD_FOLDER) -halt-on-erro $(ARTICLE).tex
 clean:
-	echo "Removing latex auxiliary files..."
+	echo "Removing latex auxiliary files except of .docx and .pdf ..."
 	find $(BUILD_FOLDER) -type f \! -name "*.pdf" \! -name "*.docx" -exec rm -v {} +
+clean-all:
+	echo "Removing all auxiliary files..."
+	rm -r $(BUILD_FOLDER)/*
 convert: 
 	echo "Converting to docx..."
 	pandoc --citeproc $(ARTICLE).tex \
